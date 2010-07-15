@@ -14,8 +14,8 @@ For questions, contact jake@meetup.com
 #### googlemapimport.java ####
 
 usage:  
-javac goolgemapimport.java (to compile)
-java googlemapimport (to run)
+"javac goolgemapimport.java" to compile and 
+"java googlemapimport" to run
 
 	where 'urlname' is the the name of the everywhere container (example: "TechCrunch" refers to "http://www.meetup.com/TechCrunch/")
 	where 'apikey' is your unique api key which can be found at "http://www.meetup.com/meetup_api/key/"
