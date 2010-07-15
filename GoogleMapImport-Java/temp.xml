@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml">
+<channel>
+  <link>http://maps.google.com</link>
+  <title>TEDxChange Events</title>
+  <description><![CDATA[]]></description>
+  <item>
+    <guid isPermaLink="false">000488356adc3f4fe5b86</guid>
+    <pubDate>Fri, 04 Jun 2010 14:48:34 +0000</pubDate>
+    <title>TEDxKibera</title>
+    <description><![CDATA[<div dir="ltr">Argwings Kodhek Rd, Nairobi, Kenya<br></div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      -1.292512 36.788788
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048835979f1acdeb6e6</guid>
+    <pubDate>Fri, 04 Jun 2010 15:01:05 +0000</pubDate>
+    <title>TEDxGathering4CuriousMinds</title>
+    <description><![CDATA[<div dir="ltr">Nairobi, Kenya<br></div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      -1.283333 36.816666
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">000488359e6e45804b2b4</guid>
+    <pubDate>Fri, 04 Jun 2010 15:02:59 +0000</pubDate>
+    <title>TEDxSoweto</title>
+    <description><![CDATA[<div dir="ltr">18 Simba Rd, Sandton 2191, South Africa<br></div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      -26.034851 28.066172
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048835a380167a654e0</guid>
+    <pubDate>Fri, 04 Jun 2010 15:04:24 +0000</pubDate>
+    <title>TEDxBerlin</title>
+    <description><![CDATA[<div dir="ltr">Krausnickstra??e 8, 10115 Berlin, Germany<br></div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      52.525108 13.397540
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048835a691fb54abd34</guid>
+    <pubDate>Fri, 04 Jun 2010 15:05:16 +0000</pubDate>
+    <title>TEDxAccra</title>
+    <description><![CDATA[<span style="font-size:11px;border-collapse:collapse;white-space:pre">147 Yew Tree Dr, </span>Guildford, Surrey GU1 1, UK<br>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      51.262413 -0.580842
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048835c458cf3b56c03</guid>
+    <pubDate>Fri, 04 Jun 2010 15:13:35 +0000</pubDate>
+    <title>TEDxAmsterdam</title>
+    <description><![CDATA[<div dir="ltr">Royal Tropical Institute</div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      52.362743 4.919909
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048835c8f091cb401ff</guid>
+    <pubDate>Fri, 04 Jun 2010 15:14:52 +0000</pubDate>
+    <title>TEDxTO</title>
+    <description><![CDATA[<div dir="ltr">140 Bathurst St, Toronto, ON M5V, Canada<br></div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      43.645611 -79.403427
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048835d79d8574fc705</guid>
+    <pubDate>Fri, 04 Jun 2010 15:18:58 +0000</pubDate>
+    <title>TEDxBeijing</title>
+    <description><![CDATA[<div dir="ltr">CNEX</div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      39.893414 116.510323
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048835efebcb2341879</guid>
+    <pubDate>Fri, 04 Jun 2010 15:25:46 +0000</pubDate>
+    <title>TEDxMyeongDong</title>
+    <description><![CDATA[<div dir="ltr">Myeong-dong, Jung-gu, Seoul, South Korea<br></div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      37.559978 126.985832
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">000488360b9d82a66ecd6</guid>
+    <pubDate>Fri, 04 Jun 2010 15:33:31 +0000</pubDate>
+    <title>TEDxDubai</title>
+    <description><![CDATA[<div dir="ltr">Knowledge Village - Dubai, United Arab Emirates<br></div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      25.102779 55.163109
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">000488360fa26069f9c8c</guid>
+    <pubDate>Fri, 04 Jun 2010 15:34:38 +0000</pubDate>
+    <title>TEDxAuckland</title>
+    <description><![CDATA[<div dir="ltr">83/85 Victoria Rd, Devonport 0624, New Zealand<br></div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      -36.829582 174.797791
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">0004883623d65b7bae62a</guid>
+    <pubDate>Fri, 04 Jun 2010 15:40:17 +0000</pubDate>
+    <title>TEDxVilaMada</title>
+    <description><![CDATA[<div dir="ltr">Vila Madalena, S??o Paulo</div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      -23.546503 -46.690971
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">0004883632ab3da6a789b</guid>
+    <pubDate>Fri, 04 Jun 2010 15:44:26 +0000</pubDate>
+    <title>TEDxStockholm</title>
+    <description><![CDATA[<div dir="ltr">Rind??gatan 15, 115 37 Stockholm urban area, Sweden<br></div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      59.347034 18.095823
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048836374d58714b470</guid>
+    <pubDate>Fri, 04 Jun 2010 15:45:44 +0000</pubDate>
+    <title>TEDxLahore</title>
+    <description><![CDATA[<div dir="ltr">19 Lawrence Rd, Lahore, Pakistan<br></div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      31.559299 74.320625
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">000488367aa26c2e45a8d</guid>
+    <pubDate>Fri, 04 Jun 2010 16:04:33 +0000</pubDate>
+    <title>TEDxTokyo</title>
+    <description><![CDATA[<div dir="ltr">Miraikan -- National Museum of Emerging Science and Innovation (Nippon Kagaku Miraikan)</div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      35.618759 139.775970
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">0004883683d4ae758b22a</guid>
+    <pubDate>Fri, 04 Jun 2010 16:07:08 +0000</pubDate>
+    <title>TEDxDF</title>
+    <description><![CDATA[<div dir="ltr">Almacenes, Tlatelolco, Ciudad de M??xico, D.f., Mexico<br></div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      19.450289 -99.135139
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">000488368ec4d49650b65</guid>
+    <pubDate>Fri, 04 Jun 2010 16:10:11 +0000</pubDate>
+    <title>TEDxBrisbane</title>
+    <description><![CDATA[<div dir="ltr">State Library of Queensland</div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      -27.471418 153.017288
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">0004883698f549bf5bee9</guid>
+    <pubDate>Fri, 04 Jun 2010 16:13:02 +0000</pubDate>
+    <title>TEDxSansFrontieres</title>
+    <description><![CDATA[<div dir="ltr"><img src="http://tedx.isf-bolivia.com/TEDxSansFrontieres_files/logo.jpg" style="width:243px"></div><div dir="ltr"><br>&nbsp;</div><div dir="ltr"><a href="http://tedx.isf-bolivia.com">http://tedx.isf-bolivia.com</a></div><div dir="ltr"><br>&nbsp;</div><div dir="ltr">- &nbsp; Cochabamba, Bolivia<br>&nbsp;</div>]]></description>
+    <author>mikel.butron</author>
+    <georss:point>
+      -17.387266 -66.175659
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048836a1d5540a5cdbe</guid>
+    <pubDate>Fri, 04 Jun 2010 16:15:31 +0000</pubDate>
+    <title>TEDxAbuja</title>
+    <description><![CDATA[<div dir="ltr">Kubwa Abuja</div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      9.141277 7.352622
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">0004898fcf0880971710d</guid>
+    <pubDate>Mon, 21 Jun 2010 20:04:13 +0000</pubDate>
+    <title>TEDxSMU</title>
+    <description><![CDATA[<div></div><span>Southern Methodist University<br>Dallas, TX 75205</span>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      32.840401 -96.782860
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048836ac5997ee713df</guid>
+    <pubDate>Fri, 04 Jun 2010 16:18:28 +0000</pubDate>
+    <title>TEDxCMU</title>
+    <description><![CDATA[<div dir="ltr">5000 Forbes Ave, Pittsburgh, PA 15213</div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      40.442661 -79.937767
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048836b0962c265a45b</guid>
+    <pubDate>Fri, 04 Jun 2010 16:19:39 +0000</pubDate>
+    <title>TEDxBuenosAires</title>
+    <description><![CDATA[Ciudad Aut??noma de Buenos Aires, Capital Federal, Argentina<br>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      -34.553257 -58.437168
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048836b64d2f81025a1</guid>
+    <pubDate>Fri, 04 Jun 2010 16:21:14 +0000</pubDate>
+    <title>TEDxGuangzhou</title>
+    <description><![CDATA[<div dir="ltr">Sun Yat-sen University</div>]]></description>
+    <author>7digit</author>
+    <georss:point>
+      23.060394 113.389000
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048836bb52bce618897</guid>
+    <pubDate>Fri, 04 Jun 2010 16:22:39 +0000</pubDate>
+    <title>TEDxDhaka</title>
+    <description><![CDATA[<div dir="ltr">Kalabagan 2nd Ln, Dhaka, Bangladesh<br></div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      23.747944 90.381401
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048836e908f50b62515</guid>
+    <pubDate>Fri, 04 Jun 2010 16:35:26 +0000</pubDate>
+    <title>Name TBD</title>
+    <description><![CDATA[<div dir="ltr">Sanad, Bahrain<br></div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      26.150000 50.583332
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048836fe009d862e498</guid>
+    <pubDate>Fri, 04 Jun 2010 16:41:17 +0000</pubDate>
+    <title>Name TBD</title>
+    <description><![CDATA[Sitia, India]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      21.739092 78.486328
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048836fecf5bd67ba54</guid>
+    <pubDate>Fri, 04 Jun 2010 16:41:31 +0000</pubDate>
+    <title>Name TBD</title>
+    <description><![CDATA[London, UK]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      51.500153 -0.126236
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">0004883700ff48e2c94d0</guid>
+    <pubDate>Fri, 04 Jun 2010 16:42:08 +0000</pubDate>
+    <title>Name TBD</title>
+    <description><![CDATA[<div dir="ltr">Kuala Lumpur, Federal Territory of Kuala Lumpur</div>]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      3.139003 101.686852
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048837057b179961100</guid>
+    <pubDate>Fri, 04 Jun 2010 16:43:23 +0000</pubDate>
+    <title>Name TBD</title>
+    <description><![CDATA[Mexico City, Mexico]]></description>
+    <author>yonghoshin.media</author>
+    <georss:point>
+      19.427050 -99.127571
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048ab95095b40838553</guid>
+    <pubDate>Tue, 06 Jul 2010 15:00:32 +0000</pubDate>
+    <title>TEDxSingapore hosts TEDxChange</title>
+    <description><![CDATA[<div dir="ltr">~ for passion, for people, for purpose<br><br><a href="http://www.TEDxSingapore.sg">www.TEDxSingapore.sg</a><br><br>email: ILoveTED @ TEDxSingapore.sg</div>]]></description>
+    <author>DavidLimTM</author>
+    <georss:point>
+      1.290227 103.852898
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+  <item>
+    <guid isPermaLink="false">00048acd7c88374c6cad9</guid>
+    <pubDate>Wed, 07 Jul 2010 15:04:29 +0000</pubDate>
+    <title>TEDxChennai</title>
+    <description><![CDATA[<div dir="ltr">IIT Madras, Chennai</div>]]></description>
+    <author>sujani</author>
+    <georss:point>
+      14.264383 79.804688
+    </georss:point>
+    <georss:elev>0.000000</georss:elev>
+  </item>
+</channel>
+</rss>

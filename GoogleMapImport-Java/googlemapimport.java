@@ -17,10 +17,16 @@ import java.net.URLEncoder;
 
 public class googlemapimport {
 	public static void main(String[] args) {
-		String addr = "http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&output=georss&msid=116968845691849104850.00048835577f696c2984d";
+
+	if (args.length != 3){
+		System.out.println("usage: java googlemapimport [URLNAME] [APIKEY] [Google map rss url]");
+	}
+	else{
+		//String addr = "http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&output=georss&msid=116968845691849104850.00048835577f696c2984d";
 		String MeetupURL = "http://api.meetup.com/ew/event/";
-		String URLNAME = "";
-		String APIKEY = "";	
+		String URLNAME = args[0];
+		String APIKEY = args[1];
+		String addr = args[2];	
 		Date time = new Date("Mon, 20 Sep 2010 11:00:00 EDT");		
 
 		BufferedReader reader;
@@ -147,7 +153,7 @@ public class googlemapimport {
     			e.printStackTrace();
   		}
 
-	}
+	}}
 
 } 
 
