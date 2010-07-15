@@ -1,9 +1,9 @@
 #!/bin/sh
 
-#Parameters: <command> 'urlname' 'time' 'key'
+#Parameters: <command> 'mapurl' 'meetupurlname' 'time' 'key'
 #time is in the form of milliseconds since the epoch
 
-url="http://maps.google.com/maps/ms?ie=ISO-8859-1&oe=ISO-8859-1&hl=en&msa=0&output=georss&msid=116968845691849104850.00048835577f696c2984d"
+url=${1}
 
 
 
@@ -57,7 +57,7 @@ do
 		d="${d:0:p-1} ${d:q}"
 	done
 	t=${titles[${num}]}\ -\ ${d}
-	curl -d "urlname=${1}&lat=${locs[${num}]:0:y}&lon=${locs[${num}]:x}&time=${2}&description=${t}&key=${3}&address1=" http://api.dev.meetup.com/ew/event/
+	curl -d "urlname=${2}&lat=${locs[${num}]:0:y}&lon=${locs[${num}]:x}&time=${3}&description=${t}&key=${4}&address1=" http://api.dev.meetup.com/ew/event/
        	num=$(($num + 1))
 done
 
