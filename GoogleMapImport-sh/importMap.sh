@@ -57,7 +57,7 @@ do
 		d="${d:0:p-1} ${d:q}"
 	done
 	t=${titles[${num}]}\ -\ ${d}
-	curl -d "urlname=${2}&lat=${locs[${num}]:0:y}&lon=${locs[${num}]:x}&time=${3}&description=${t}&key=${4}&address1=" http://api.dev.meetup.com/ew/event/
+	curl -d "urlname=${2}&lat=${locs[${num}]:0:y}&lon=${locs[${num}]:x}&time=${3}&description=${t}&key=${4}&address1=" http://api.meetup.com/ew/event/
        	num=$(($num + 1))
 done
 
