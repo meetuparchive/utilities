@@ -9,7 +9,7 @@ Usage: <command> 'mapurl' 'meetupurlname' 'time' 'key'
      Where 'key' is your Meetup API Developer key
    
 For questions, contact jake@meetup.com
-######################
+
 
 #### googlemapimport.java ####
 
@@ -23,4 +23,4 @@ usage:
 	where 'time' is the event time which is given in milliseconds since the epoch. to get the number use the date command on the command line (example: 'date +%s -d "Tue Jul 21 04:23:56 EDT 2010"')
 
 For questions, contact michael@meetup.com
-##############################
+
