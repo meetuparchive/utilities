@@ -4,7 +4,7 @@
 #time is in the form of milliseconds since the epoch
 
 url=${1}
-
+#"http://maps.google.com/maps/ms?ie=ISO-8859-1&oe=ISO-8859-1&hl=en&msa=0&output=georss&msid=116968845691849104850.00048835577f696c2984d"
 
 
 num=0
