@@ -1,40 +1,34 @@
 import java.io.*;
 import java.net.*;
-import java.security.Principal;
 import java.util.*;
-import java.io.IOException;
-import java.io.PrintStream;
-import java.net.InetAddress;
-import javax.xml.*;
-import java.io.File;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import java.net.URLEncoder;
+import java.security.Principal;
 
 public class googlemapimport {
 	public static void main(String[] args) {
 
-		if (args.length != 3){
-			System.out.println("usage: java googlemapimport [URLNAME] [APIKEY] [Google map rss url]");
+		if (args.length != 4){
+			System.out.println("usage: java googlemapimport [URLNAME] [APIKEY] [Google map rss url] [time (milisecs since epoch)]");
 		}
 		else{
-			//String addr = "http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&output=georss&msid=116968845691849104850.00048835577f696c2984d";
+
 			String MeetupURL = "http://api.meetup.com/ew/event/";
 			String URLNAME = args[0];
 			String APIKEY = args[1];
-			String addr = args[2];	
-			Date time = new Date("Mon, 20 Sep 2010 11:00:00 EDT");		
+			String addr = args[2];
+			String time = args[3];
+
 
 			BufferedReader reader;
 			URL url;
 			HttpURLConnection conn;
 			String params = "";
 			String [] LatLon = new String[2];
-
 
 			//load data from google
 			try{
@@ -114,7 +108,7 @@ public class googlemapimport {
 						params = params + "&description=" + URLEncoder.encode(((Node) fstNm.item(0)).getNodeValue().replaceAll("\\<.*?>",""));
 
 						//add time and api key
-						params = params + "&time=" + time.getTime();
+						params = params + "&time=" + time;
 						params = params + "&key=" + APIKEY;
 					
 
@@ -141,10 +135,12 @@ public class googlemapimport {
 							wr.close(); 
 							rd.close(); 
 				   		
-
+							//close connection
 							conn.disconnect();
 
 						} catch(IOException ex) {
+	
+							//catch exception and print it out, also print out the params
 							System.out.println();
 							ex.printStackTrace();
 							System.out.println();
