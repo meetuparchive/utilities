@@ -18,17 +18,13 @@ import java.net.URLEncoder;
 public class googlemapimport {
 	public static void main(String[] args) {
 		String addr = "http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&output=georss&msid=116968845691849104850.00048835577f696c2984d";
-		String MeetupURL = "http://api.meetup.com/ew/event/";
-		String URLNAME = "";
-		String APIKEY = "";	
-		Date time = new Date("Mon, 20 Sep 2010 11:00:00 EDT");		
-
 		BufferedReader reader;
+		String MeetupURL = "http://api.meetup.com/ew/event/";
 		URL url;
 		HttpURLConnection conn;
 		String params = "";
 		String [] LatLon = new String[2];
-
+		Date time = new Date("Mon, 20 Sep 2010 11:00:00 EDT");
 
 		//load data from google
 		try{
@@ -46,7 +42,7 @@ public class googlemapimport {
 
    			try{
     				// Create file 
-    				FileWriter fstream = new FileWriter("temp.xml");
+    				FileWriter fstream = new FileWriter("test.xml");
         			BufferedWriter out = new BufferedWriter(fstream);
 				String text = reader.readLine();
 				while (text != null){		
@@ -83,7 +79,7 @@ public class googlemapimport {
     
     				if (fstNode.getNodeType() == Node.ELEMENT_NODE) {
  
-					params = "urlname=" + URLNAME;
+					params = "urlname=TEDTESTMIKE2";
 
            				Element fstElmnt = (Element) fstNode;
 					NodeList fstNmElmntLst = fstElmnt.getElementsByTagName("title");
@@ -106,7 +102,7 @@ public class googlemapimport {
 
 					params = params + "&time=" + time.getTime();
 
-					params = params + "&key=" + APIKEY;
+					params = params + "&key=2b2b21f3a32d2a5b4c6d3c8015746";
 					
 
 					try{
