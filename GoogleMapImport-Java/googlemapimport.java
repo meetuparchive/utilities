@@ -12,17 +12,23 @@ import java.security.Principal;
 public class googlemapimport {
 	public static void main(String[] args) {
 
-		if (args.length != 4){
-			System.out.println("usage: java googlemapimport [URLNAME] [APIKEY] [Google map rss url] [time (milisecs since epoch)]");
-		}
-		else{
-
+		
+		String URLNAME = "";
+String APIKEY = "";
+String addr = "";
+String time = "";
+			BufferedReader keyboard = new BufferedReader( new InputStreamReader( System.in ) );
 			String MeetupURL = "http://api.meetup.com/ew/event/";
-			String URLNAME = args[0];
-			String APIKEY = args[1];
-			String addr = args[2];
-			String time = args[3];
-
+			try{
+			System.out.println("Please enter the Url Name: ");
+			URLNAME = keyboard.readLine();
+			System.out.println("Please enter your api key: ");
+			APIKEY = keyboard.readLine();
+			System.out.println("Please enter the google map rss url: ");
+			addr = keyboard.readLine();
+			System.out.println("Please enter the time (millisecs from the epoch): ");
+			time = keyboard.readLine();
+			} catch (Exception e){}
 
 			BufferedReader reader;
 			URL url;
@@ -154,6 +160,6 @@ public class googlemapimport {
 	    			e.printStackTrace();
 	  		}
 		}
-	}
+	
 } 
 
