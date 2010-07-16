@@ -75,7 +75,7 @@ String time = "";
 
 			//parse xml
 			try {
-				File file = new File("test.xml");
+				File file = new File("temp.xml");
 	  			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 	  			DocumentBuilder db = dbf.newDocumentBuilder();
 	  			Document doc = db.parse(file);
