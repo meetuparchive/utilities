@@ -17,7 +17,7 @@ if len(sys.argv) != 4:
 cmd, file, key, urlname = sys.argv
 
 doc = xml.dom.minidom.parse(file)
-host = "api.dev.meetup.com"
+host = "api.meetup.com"
 os.environ['TZ']='UTC'
 time.tzset()
 now = datetime.now() + timedelta(hours=1)
@@ -29,7 +29,8 @@ for node in doc.getElementsByTagName("t_event"):
             return elems[0].childNodes[0].data.encode("ISO-8859-1")
         else: return None
 
-    print(text("t_event_id"))
+    t_event_id = text("t_event_id")
+    print(t_event_id)
 
     try: dt = datetime.strptime(text("t_event_date").rstrip("0")[:-1], '%Y-%m-%d %H:%M:%S')
     except: dt = None
@@ -38,8 +39,19 @@ for node in doc.getElementsByTagName("t_event"):
     elif dt < now:
         print "skipping past event"
     else:
-        print int(time.mktime(dt.timetuple())) * 1000
+        endpoint = "/ew/event"
         conn = HTTPConnection(host)
+        conn.request("GET", "/ew/events.xml?" + urllib.urlencode({
+            "urlname" : urlname,
+            "udf_t_event_id": t_event_id,
+            "key": key}))
+        res = conn.getresponse()
+        assert res.status == 200
+        resdoc = xml.dom.minidom.parseString(res.read())
+        for item in resdoc.getElementsByTagName("item")[:1]:
+            for id_node in [ch for ch in item.childNodes if ch.tagName.lower() == "id"][:1]:
+                endpoint = "%s/%s" % (endpoint, id_node.childNodes[0].data)
+        
         headers = {"Content-type": "application/x-www-form-urlencoded"}
         first, last, ld = map(text, ("t_author_first_name", "t_author_last_name", "t_long_description"))
         desc = "Featuring %s %s\n\n%s" % (first, last, ld) if first and last else ld
@@ -51,10 +63,9 @@ for node in doc.getElementsByTagName("t_event"):
                    "title": text("t_short_description"),
                    "description": desc,
                    "organize": "true",
-                   "udf_t_event_id": text("t_event_id"),
+                   "udf_t_event_id": t_event_id,
                    "key": key }
-        conn.request("POST", "/ew/event/", urllib.urlencode(params), headers)
+        conn.request("POST", endpoint, urllib.urlencode(params), headers)
         res = conn.getresponse()
         print res.read()
-        assert res.status == 201
-
+        assert res.status in [200,201] 
