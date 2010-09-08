@@ -4,12 +4,11 @@
 Walk through an events XML file and create or update events in Meetup Everywhere.
 """
 
-import sys
+import sys, os, time
 import xml.dom.minidom
 from httplib import HTTPConnection
 import urllib
 from datetime import datetime, timedelta
-import time
 
 if len(sys.argv) != 4:
     print("Usage: xmlevents.py <input file> <api key> <urlname>")
@@ -18,7 +17,9 @@ if len(sys.argv) != 4:
 cmd, file, key, urlname = sys.argv
 
 doc = xml.dom.minidom.parse(file)
-host = "api.meetup.com"
+host = "api.dev.meetup.com"
+os.environ['TZ']='UTC'
+time.tzset()
 now = datetime.now() + timedelta(hours=1)
 
 for node in doc.getElementsByTagName("t_event"):
@@ -37,12 +38,13 @@ for node in doc.getElementsByTagName("t_event"):
     elif dt < now:
         print "skipping past event"
     else:
+        print int(time.mktime(dt.timetuple())) * 1000
         conn = HTTPConnection(host)
         headers = {"Content-type": "application/x-www-form-urlencoded"}
         first, last, ld = map(text, ("t_author_first_name", "t_author_last_name", "t_long_description"))
         desc = "Featuring %s %s\n\n%s" % (first, last, ld) if first and last else ld
         params = { "urlname" : urlname,
-                   "time": int(time.mktime(dt.timetuple())) * 1000,
+                   "local_time": int(time.mktime(dt.timetuple())) * 1000,
                    "zip": text("t_store_zip_code"),
                    "address1": text("t_store_address"),
                    "venue_name": text("t_event_location"),
@@ -55,3 +57,4 @@ for node in doc.getElementsByTagName("t_event"):
         res = conn.getresponse()
         print res.read()
         assert res.status == 201
+
