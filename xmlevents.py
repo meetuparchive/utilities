@@ -65,7 +65,7 @@ for node in doc.getElementsByTagName("t_event"):
                    "local_time": int(time.mktime(dt.timetuple())) * 1000,
                    "zip": text("t_store_zip_code"),
                    "address1": text("t_store_address"),
-                   "venue_name": text("t_event_location"),
+                   "venue_name": "[OFFICIAL] " + text("t_short_description"),
                    "title": text("t_short_description"), # not visible on site
                    "description": desc,
                    "organize": "true",
