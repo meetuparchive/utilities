@@ -79,3 +79,5 @@ for node in doc.getElementsByTagName("t_event"):
         if res.status not in [200,201]:
             # most likely bad input, continue processing...
             print "t_event_id %s - Unable to add event:\n%s" % (t_event_id, res.read())
+
+print "\nExport complete"
