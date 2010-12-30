@@ -11,7 +11,7 @@ import urllib
 from datetime import datetime, timedelta
 
 if len(sys.argv) != 4:
-    print("Usage: xmlevents.py <input file> <api key> <urlname>")
+    print "Usage: xmlevents.py <input file> <api key> <urlname>"
     sys.exit(1)
 
 cmd, file, key, urlname = sys.argv
@@ -34,15 +34,12 @@ for node in doc.getElementsByTagName("t_event"):
         else: return None
 
     t_event_id = text("t_event_id")
-    print(t_event_id) # print event id now in case something goes wrong
 
     try: dt = datetime.strptime(text("t_event_date").rstrip("0")[:-1], '%Y-%m-%d %H:%M:%S')
     except: dt = None
     if dt == None:
-        print "bad time format: %s" % text("t_event_date")
-    elif dt < now:
-        print "skipping past event"
-    else:
+        print "t_event_id %s - Bad time format: %s" % (t_event_id, text("t_event_date"))
+    elif dt > now:
         # default to event create
         endpoint = "/ew/event"
         conn = HTTPConnection(host)
@@ -52,7 +49,10 @@ for node in doc.getElementsByTagName("t_event"):
             "udf_t_event_id": t_event_id,
             "key": key}))
         res = conn.getresponse()
-        assert res.status == 200 # abort if not an okay response
+        if res.status != 200:
+            # abort processing as this indicates there may be a service problem
+            print "Error querying t_event_id %s:\n%s\nExport halted." % (t_event_id, res.read())
+            sys.exit(1)
         resdoc = xml.dom.minidom.parseString(res.read())
         for item in resdoc.getElementsByTagName("item")[:1]:
             for id_node in [ch for ch in item.childNodes if ch.tagName.lower() == "id"][:1]:
@@ -65,6 +65,8 @@ for node in doc.getElementsByTagName("t_event"):
                    "local_time": int(time.mktime(dt.timetuple())) * 1000,
                    "zip": text("t_store_zip_code"),
                    "address1": text("t_store_address"),
+                   "city": text("t_store_city"),
+                   "state": text("t_store_state"),
                    "venue_name": "[OFFICIAL] " + "%s %s %s" % (first or "", last or "", text("t_event_type")),
                    "title": text("t_short_description"), # not visible on site
                    "description": desc,
@@ -74,5 +76,6 @@ for node in doc.getElementsByTagName("t_event"):
         headers = {"Content-type": "application/x-www-form-urlencoded"}
         conn.request("POST", endpoint, urllib.urlencode(params), headers)
         res = conn.getresponse()
-        print res.read() # may be useful for debugging
-        assert res.status in [200,201] # abort if not an okay/created response
+        if res.status not in [200,201]:
+            # most likely bad input, continue processing...
+            print "t_event_id %s - Unable to add event:\n%s" % (t_event_id, res.read())
